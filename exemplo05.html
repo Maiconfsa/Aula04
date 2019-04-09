@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Aula 04 Exemplo 05</title>
+</head>
+<body>
+    <p>O produto de <span id="elemA">5</span> * <span id="elemB">7</span> é <span id="resultado">?</span>.</p>
+    <button id="botao">Calcular</button>
+    <script>
+        var eElemA = document.getElementById("elemA");
+        var eElemB = document.getElementById("elemB");
+        var eResultado = document.getElementById("resultado");
+        var eBotao = document.getElementById("botao");
+
+        eElemA.contentEditable = true;
+        eElemB.contentEditable = true;
+
+        eBotao.addEventListener("click", calculaResltado);
+
+        function calculaResltado() {
+            var a = Number(eElemA.textContent);
+            var b = Number(eElemB.textContent);
+            var r = a * b;
+        
+        eResultado.textContent = r;
+        }
+
+    </script>
+
+</body>
+</html>
