@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Aula 04 Exemplo 04</title>
+</head>
+<body>
+    <p>O produto de <span id="elemA">5</span> * <span id="elemB">7</span> é <span id="resultado">r</span>.</p>
+    
+    <script>
+        var eElemA = document.getElementById("elemA");
+        var eElemB = document.getElementById("elemB");
+
+        var a = Number(eElemA.textContent);
+        var b = Number(eElemB.textContent);
+        
+        var r = a * b;
+
+        var eResultado = document.getElementById("resultado");
+        eResultado.textContent = r;
+    </script>
+
+</body>
+</html>
